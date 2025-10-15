@@ -4,67 +4,125 @@
 <head>
     <title>LazyTeam</title>
     <meta charset="UTF-8">
+
 </head>
 
-<body>
-    <dialog id="welcome" open>
-        <h1>LazyTeam</h1>
-        <p>Sito in costruzione</p>
-        <button onclick="document.getElementById('welcome').close()">ok</button>
+<body
+    background="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFElEQVQIW2M8c+bMfwYGBgZGKAAAVswC6Y2VhUEAAAAASUVORK5CYII="
+    bgcolor="#c0c0c0" style="font-size:17px;">
+
+    <dialog id="clippy" open>
+        <p>Welcome to LazyTeam</p>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWliMGh3bzV4bDlkcXpoaW05ZmY5bzdxOGJtc3dpbjhucTQzNnFjOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13V60VgE2ED7oc/giphy.gif"
+            alt="clippy" width="200">
+        <button onclick="document.getElementById('clippy').close()">Ok</button>
     </dialog>
 
     <h1>LazyTeam</h1>
-    <p>Benvenuti nel <mark>sito</mark> del LazyTeam.</p>
 
-    <h2>Chi siamo</h2>
+    <h2>About Us</h2>
     <ul>
         <li>
-            <cite>Gabriele</cite>
+            <b>Gabriele</b> <cite>Full-Stack Developer</cite>
+            <a target="_blank" href="https://gabrielemartire.github.io/">Profile</a> |
+            <a target="_blank" href="https://github.com/gabrielemartire">Github</a> |
+            <a target="_blank" href="https://www.linkedin.com/in/gabriele-martire-33429395/">Linkedin</a>
         </li>
         <li>
-            <cite>Lorenzo</cite>
+            <b>Lorenzo</b> <cite>Full-Stack Developer</cite>
+            <a target="_blank" href="https://github.com/lorenzorapetti">Github</a>
         </li>
     </ul>
 
-    <h2>Cosa facciamo</h2>
-    <p>Siti belli con:</p>
+    <h2>Our Services</h2>
+    <mark>We specialize in cutting-edge web development technologies</mark>
     <ul>
-        <li><kbd>NodeJS</kbd></li>
-        <li><kbd>altro</kbd></li>
+        <li><kbd><b>Node.js Development</b></kbd> - Server-side tailored JavaScript applications</li>
+        <li><kbd><b>Full-Stack Solutions</b></kbd> - End-to-end web application development</li>
+        <li><kbd><b>API Integration</b></kbd> - RESTful and GraphQL services</li>
+        <li><kbd><b>Database Design</b></kbd> - SQL and NoSQL database architecture</li>
+        <li><kbd><b>Cloud Deployment</b></kbd> - Scalable infrastructure solutions</li>
     </ul>
 
-    <h2>I nostri progetti</h2>
-    <ul>
+    <p>
+        <img src="https://anlucas.neocities.org/built_with_microsoft_notepad.gif" alt="netscape now" height="31"
+            onerror="this.style.display='none'">
+    </p>
+
+    <h2>Portfolio</h2>
+    <ol>
         <li>
-            <strong>ClienteXYZ</strong>
-            <a href="#">sitobello.it</a>
+            <strong>DisegnoDigitale</strong>
+            <a target="_blank" href="https://dd.m2ingegneria.it">dd.m2ingegneria.it</a>
             <br>
-            <cite>Piattaforma usata per fare robe belle belle</cite>
-            <details>
-                <summary>vedi anteprima</summary>
-                <iframe src="https://www.wikipedia.org/" width="600" height="400" title="description"></iframe>
-            </details>
-        </li>
-        <li>
-            <strong>ClienteSPA</strong>
-            <a href="#">sitarello.com</a>
+            <i>Comprehensive business management platform featuring CRM, analytics, and reporting modules</i>
             <br>
-            <cite>Piattaforma usata per fare robette un po cosi e cosi</cite>
-            <details>
-                <summary>vedi anteprima</summary>
-                <iframe src="https://www.wikipedia.org/" width="600" height="400" title="description"></iframe>
+            <details style="display: inline-block;">
+                <summary><u>SEE PREVIEW</u></summary>
+                <iframe src="https://dd.m2ingegneria.it" width="900" height="500" title="description"></iframe>
             </details>
-        </li>
-    </ul>
+        </li><br>
+        <li>
+            <strong>Gradity</strong>
+            <a target="_blank" href="https://www.gradity.it/">gradity.it</a>
+            <br>
+            <i>Custom e-commerce solution with real-time inventory management and integrated payment processing</i>
+            <br>
+            <details style="display: inline-block;">
+                <summary><u>SEE PREVIEW</u></summary>
+                <iframe src="https://www.gradity.it/" width="900" height="500" title="description"></iframe>
+            </details>
+        </li><br>
+    </ol>
 
-    <h2>Contatti</h2>
-    <p>Ti risponderemo.</p>
-    <p><a href="mailto:info@lazyteam.com">info@lazyteam.com</a></p>
-    <sub>(Non controllata regolarmente)</sub>
+    <h2>Contact Us</h2>
+    <p>For inquiries about our services or to discuss your project requirements, please contact us:</p>
+    <b>Email:</b> <a href="mailto:info@lazyteam.com">info@lazyteam.com</a>
+    <sub>(Checked regularly)</sub>
+
+    <br>
+    <br>
+
+    <span style="background: black; color: lime; display: inline-block;">
+        You are visitor number #<span id="counter">000000</span>
+    </span>
+    <br>
+
+    <img src="https://anlucas.neocities.org/netscape_now.gif" alt="NetscapeNow" width="88" height="31"
+        onerror="this.style.display='none'">
+    <img src="https://anlucas.neocities.org/getie.gif" alt="getie" width="88" height="31"
+        onerror="this.style.display='none'">
 
     <hr>
 
-    <marquee><small>2025 LazyTeam©</small></marquee>
+    <marquee scrollamount="14">
+        <small>2025 LazyTeam</small>
+    </marquee>
+
 </body>
+
+<style>
+    body {
+        cursor: help;
+    }
+</style>
+
+<script>
+    console.log('Skeuomorphism')
+    function updateCounter() {
+        var now = new Date();
+        var dayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+        var minutesFromStart = Math.floor((now - dayStart) / 60000);
+
+        var baseVisitors = 0;
+        var todayVisitors = Math.floor(minutesFromStart); // ~2-3 visitatori al minuto
+        var total = baseVisitors + todayVisitors;
+
+        document.getElementById('counter').textContent = String(total).padStart(6, '0');
+    }
+
+    updateCounter();
+    setInterval(updateCounter, 60000);
+</script>
 
 </html>
